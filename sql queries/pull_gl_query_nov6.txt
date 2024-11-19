@@ -1,0 +1,116 @@
+SELECT TOP(10)
+    '{DATABASE1}' as [SOURCE_DATA],
+    'dps' as [SOURCE_SYSTEM],
+    [CURRENCY] = mon.Nombre,
+    '{investment[DATABASE1][2]}' as [INVESTMENT_ID],
+    '{investment[DATABASE1][0]}' as [OFFICE_NAME],
+    '{investment[DATABASE1][1]} - {investment[DATABASE1][0]}' as [OFFICE],
+    [TRANSACTION_ID] = imp.IdImputacion,
+    [DESCRIPTION] = imp.Leyenda,
+    [DESCRIPTION_2] = asi.LeyendaGeneral,
+    [TRANSACTION_DATE] = asi.Fecha,
+    1 as [SEQUENCE_NUMBER],
+    [CREATED_BY_fn] = emp.Nombre,
+    [CREATED_BY_ln] = emp.Apellido,
+    [CREATED_BY_id] = emp.IdEmpleado,
+    [CREDIT] = CASE WHEN imp.Importe < 0 THEN imp.Importe ELSE 0 END,
+    [DEBIT] = CASE WHEN imp.Importe > 0 THEN imp.Importe ELSE 0 END,
+    [TOTAL] = imp.Importe,
+    [Client] = cli.Nombre,
+    [Supplier] = pro.Nombre,
+    [Cuenta] = cue.Cuenta,
+    [Nombre] = cue.Nombre,
+    [Clase] = cla.Nombre,
+    [SubClase] = subcla.Nombre,
+    [Rubro] = ru.Nombre,
+    [SubRubro] = subru.Nombre
+FROM 
+    [{DATABASE1}].[dbo].[Imputacion] as imp 
+    INNER JOIN [{DATABASE1}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
+    LEFT JOIN [{DATABASE1}].[dbo].[Moneda] as mon ON asi.Moneda = mon.IdMoneda
+    LEFT JOIN [{DATABASE1}].[dbo].[Empleado] as emp on asi.UsuarioAlta = emp.IdEmpleado
+    LEFT JOIN [{DATABASE1}].[dbo].[Cliente] as cli on imp.Cliente = cli.IdCliente
+    LEFT JOIN [{DATABASE1}].[dbo].[Proveedor] as pro on imp.Proveedor = pro.IdProveedor
+    LEFT JOIN [{DATABASE1}].[dbo].[PlanCuenta] as cue on imp.Cuenta = cue.Cuenta
+    LEFT JOIN [{DATABASE1}].[dbo].[Clase] as cla on cue.Clase = cla.IdClase
+    LEFT JOIN [{DATABASE1}].[dbo].[SubClase] as subcla on cue.SubClase = subcla.IdSubClase
+    LEFT JOIN [{DATABASE1}].[dbo].[Rubro] as ru on cue.Rubro = ru.IdRubro
+    LEFT JOIN [{DATABASE1}].[dbo].[SubRubro] as subru on cue.SubRubro = subru.IdSubRubro
+UNION ALL
+SELECT TOP(10)
+    '{DATABASE2}' as [SOURCE_DATA],
+    'dps' as [SOURCE_SYSTEM],
+    [CURRENCY] = mon.Nombre,
+    '{investment[DATABASE2][2]}' as [INVESTMENT_ID],
+    '{investment[DATABASE2][0]}' as [OFFICE_NAME],
+    '{investment[DATABASE2][1]} - {investment[DATABASE2][0]}' as [OFFICE],
+    [TRANSACTION_ID] = imp.IdImputacion,
+    [DESCRIPTION] = imp.Leyenda,
+    [DESCRIPTION_2] = asi.LeyendaGeneral,
+    [TRANSACTION_DATE] = asi.Fecha,
+    1 as [SEQUENCE_NUMBER],
+    [CREATED_BY_fn] = emp.Nombre,
+    [CREATED_BY_ln] = emp.Apellido,
+    [CREATED_BY_id] = emp.IdEmpleado,
+    [CREDIT] = CASE WHEN imp.Importe < 0 THEN imp.Importe ELSE 0 END,
+    [DEBIT] = CASE WHEN imp.Importe > 0 THEN imp.Importe ELSE 0 END,
+    [TOTAL] = imp.Importe,
+    [Client] = cli.Nombre,
+    [Supplier] = pro.Nombre,
+    [Cuenta] = cue.Cuenta,
+    [Nombre] = cue.Nombre,
+    [Clase] = cla.Nombre,
+    [SubClase] = subcla.Nombre,
+    [Rubro] = ru.Nombre,
+    [SubRubro] = subru.Nombre
+FROM 
+    [{DATABASE2}].[dbo].[Imputacion] as imp 
+    INNER JOIN [{DATABASE2}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
+    LEFT JOIN [{DATABASE2}].[dbo].[Moneda] as mon ON asi.Moneda = mon.IdMoneda
+    LEFT JOIN [{DATABASE2}].[dbo].[Empleado] as emp on asi.UsuarioAlta = emp.IdEmpleado
+    LEFT JOIN [{DATABASE2}].[dbo].[Cliente] as cli on imp.Cliente = cli.IdCliente
+    LEFT JOIN [{DATABASE2}].[dbo].[Proveedor] as pro on imp.Proveedor = pro.IdProveedor
+    LEFT JOIN [{DATABASE2}].[dbo].[PlanCuenta] as cue on imp.Cuenta = cue.Cuenta
+    LEFT JOIN [{DATABASE2}].[dbo].[Clase] as cla on cue.Clase = cla.IdClase
+    LEFT JOIN [{DATABASE2}].[dbo].[SubClase] as subcla on cue.SubClase = subcla.IdSubClase
+    LEFT JOIN [{DATABASE2}].[dbo].[Rubro] as ru on cue.Rubro = ru.IdRubro
+    LEFT JOIN [{DATABASE2}].[dbo].[SubRubro] as subru on cue.SubRubro = subru.IdSubRubro
+UNION ALL
+SELECT TOP(10)
+    '{DATABASE3}' as [SOURCE_DATA],
+    'dps' as [SOURCE_SYSTEM],
+    [CURRENCY] = mon.Nombre,
+    '{investment[DATABASE3][2]}' as [INVESTMENT_ID],
+    '{investment[DATABASE3][0]}' as [OFFICE_NAME],
+    '{investment[DATABASE3][1]} - {investment[DATABASE3][0]}' as [OFFICE],
+    [TRANSACTION_ID] = imp.IdImputacion,
+    [DESCRIPTION] = imp.Leyenda,
+    [DESCRIPTION_2] = asi.LeyendaGeneral,
+    [TRANSACTION_DATE] = asi.Fecha,
+    1 as [SEQUENCE_NUMBER],
+    [CREATED_BY_fn] = emp.Nombre,
+    [CREATED_BY_ln] = emp.Apellido,
+    [CREATED_BY_id] = emp.IdEmpleado,
+    [CREDIT] = CASE WHEN imp.Importe < 0 THEN imp.Importe ELSE 0 END,
+    [DEBIT] = CASE WHEN imp.Importe > 0 THEN imp.Importe ELSE 0 END,
+    [TOTAL] = imp.Importe,
+    [Client] = cli.Nombre,
+    [Supplier] = pro.Nombre,
+    [Cuenta] = cue.Cuenta,
+    [Nombre] = cue.Nombre,
+    [Clase] = cla.Nombre,
+    [SubClase] = subcla.Nombre,
+    [Rubro] = ru.Nombre,
+    [SubRubro] = subru.Nombre
+FROM 
+    [{DATABASE3}].[dbo].[Imputacion] as imp 
+    INNER JOIN [{DATABASE3}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
+    LEFT JOIN [{DATABASE3}].[dbo].[Moneda] as mon ON asi.Moneda = mon.IdMoneda
+    LEFT JOIN [{DATABASE3}].[dbo].[Empleado] as emp on asi.UsuarioAlta = emp.IdEmpleado
+    LEFT JOIN [{DATABASE3}].[dbo].[Cliente] as cli on imp.Cliente = cli.IdCliente
+    LEFT JOIN [{DATABASE3}].[dbo].[Proveedor] as pro on imp.Proveedor = pro.IdProveedor
+    LEFT JOIN [{DATABASE3}].[dbo].[PlanCuenta] as cue on imp.Cuenta = cue.Cuenta
+    LEFT JOIN [{DATABASE3}].[dbo].[Clase] as cla on cue.Clase = cla.IdClase
+    LEFT JOIN [{DATABASE3}].[dbo].[SubClase] as subcla on cue.SubClase = subcla.IdSubClase
+    LEFT JOIN [{DATABASE3}].[dbo].[Rubro] as ru on cue.Rubro = ru.IdRubro
+    LEFT JOIN [{DATABASE3}].[dbo].[SubRubro] as subru on cue.SubRubro = subru.IdSubRubro

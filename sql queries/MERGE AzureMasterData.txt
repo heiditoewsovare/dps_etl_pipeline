@@ -1,0 +1,62 @@
+ MERGE AzureMasterData.PARTY AS Target
+    USING (SELECT ? as party_id, ? as party_type, ? as investment_id, ? as source_system, ? as source_data, ? as mstr_create_time, ? as mstr_last_update_time, ? as active_flag, ? as party_name, ? as party_address1, ? as party_address2, ? as party_city, ? as party_county, ? as party_state, ? as party_country, ? as party_zip, ? as party_attention, ? as party_baddress1, ? as party_baddress2, ? as party_bcity, ? as party_bcounty, ? as party_bstate, ? as party_bcountry, ? as party_bzip, ? as party_saddress1, ? as party_saddress2, ? as party_scity, ? as party_scounty, ? as party_sstate, ? as party_scountry, ? as party_szip, ? as party_footer, ? as party_name_sort, ? as party_fiscal_start, ? as party_credit_limit, ? as party_high_balance, ? as party_inv_by, ? as inv_format, ? as party_mattention, ? as party_minv_by, ? as party_mfooter, ? as new_business, ? as party_p_paydays, ? as party_m_paydays, ? as contract_exp_dt, ? as date_started, ? as date_ended, ? as last_transaction, ? as party_contact_id, ? as internal_contact_id, ? as party_currency) 
+    AS Source ON Source.party_id= Target.party_id
+    
+    -- For Inserts
+    WHEN NOT MATCHED BY Target THEN
+        INSERT (party_id,party_type,investment_id,source_system,source_data,mstr_create_time,mstr_last_update_time,active_flag,party_name,party_address1,party_address2,party_city,party_county,party_state,party_country,party_zip,party_attention,party_baddress1,party_baddress2,party_bcity,party_bcounty,party_bstate,party_bcountry,party_bzip,party_saddress1,party_saddress2,party_scity,party_scounty,party_sstate,party_scountry,party_szip,party_footer,party_name_sort,party_fiscal_start,party_credit_limit,party_high_balance,party_inv_by,inv_format,party_mattention,party_minv_by,party_mfooter,new_business,party_p_paydays,party_m_paydays,contract_exp_dt,date_started,date_ended,last_transaction,party_contact_id,internal_contact_id,party_currency)
+        VALUES (Source.party_id, Source.party_type, Source.investment_id, Source.source_system, Source.source_data, Source.mstr_create_time, Source.mstr_last_update_time, Source.active_flag, Source.party_name, Source.party_address1, Source.party_address2, Source.party_city, Source.party_county, Source.party_state, Source.party_country, Source.party_zip, Source.party_attention, Source.party_baddress1, Source.party_baddress2, Source.party_bcity, Source.party_bcounty, Source.party_bstate, Source.party_bcountry, Source.party_bzip, Source.party_saddress1, Source.party_saddress2, Source.party_scity, Source.party_scounty, Source.party_sstate, Source.party_scountry, Source.party_szip, Source.party_footer, Source.party_name_sort, Source.party_fiscal_start, Source.party_credit_limit, Source.party_high_balance, Source.party_inv_by, Source.inv_format, Source.party_mattention, Source.party_minv_by, Source.party_mfooter, Source.new_business, Source.party_p_paydays, Source.party_m_paydays, Source.contract_exp_dt, Source.date_started, Source.date_ended, Source.last_transaction, Source.party_contact_id, Source.internal_contact_id, Source.party_currency)
+    
+    -- For Updates
+    WHEN MATCHED THEN UPDATE SET
+        Target.party_id = Source.party_id,
+        Target.party_type = Source.party_type,
+        Target.investment_id = Source.investment_id,
+        Target.source_system = Source.source_system,
+        Target.source_data = Source.source_data,
+        Target.mstr_create_time = Source.mstr_create_time,
+        Target.mstr_last_update_time = Source.mstr_last_update_time,
+        Target.active_flag = Source.active_flag,
+        Target.party_name = Source.party_name,
+        Target.party_address1 = Source.party_address1,
+        Target.party_address2 = Source.party_address2,
+        Target.party_city = Source.party_city,
+        Target.party_county = Source.party_county,
+        Target.party_state = Source.party_state,
+        Target.party_country = Source.party_country,
+        Target.party_zip = Source.party_zip,
+        Target.party_attention = Source.party_attention,
+        Target.party_baddress1 = Source.party_baddress1,
+        Target.party_baddress2 = Source.party_baddress2,
+        Target.party_bcity = Source.party_bcity,
+        Target.party_bcounty = Source.party_bcounty,
+        Target.party_bstate = Source.party_bstate,
+        Target.party_bcountry = Source.party_bcountry,
+        Target.party_bzip = Source.party_bzip,
+        Target.party_saddress1 = Source.party_saddress1,
+        Target.party_saddress2 = Source.party_saddress2,
+        Target.party_scity = Source.party_scity,
+        Target.party_scounty = Source.party_scounty,
+        Target.party_sstate = Source.party_sstate,
+        Target.party_scountry = Source.party_scountry,
+        Target.party_szip = Source.party_szip,
+        Target.party_footer = Source.party_footer,
+        Target.party_name_sort = Source.party_name_sort,
+        Target.party_fiscal_start = Source.party_fiscal_start,
+        Target.party_credit_limit = Source.party_credit_limit,
+        Target.party_high_balance = Source.party_high_balance,
+        Target.party_inv_by = Source.party_inv_by,
+        Target.inv_format = Source.inv_format,
+        Target.party_mattention = Source.party_mattention,
+        Target.party_minv_by = Source.party_minv_by,
+        Target.party_mfooter = Source.party_mfooter,
+        Target.new_business = Source.new_business,
+        Target.party_p_paydays = Source.party_p_paydays,
+        Target.party_m_paydays = Source.party_m_paydays,
+        Target.contract_exp_dt = Source.contract_exp_dt,
+        Target.date_started = Source.date_started,
+        Target.date_ended = Source.date_ended,
+        Target.last_transaction = Source.last_transaction,
+        Target.party_contact_id = Source.party_contact_id,
+        Target.internal_contact_id = Source.internal_contact_id,
+        Target.party_currency = Source.party_currency;
