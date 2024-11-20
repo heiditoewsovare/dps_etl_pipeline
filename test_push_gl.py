@@ -21,17 +21,14 @@ except Exception as e:
 
 print(f'Connection succeeded.')
 
-data_file = 'dps_query_test_5.csv'
+data_file = 'dps_query_map_test_4.csv'
 df = pd.read_csv(data_file)
 
 
-table_name = '[AzureMasterData].[GENERAL_LEDGER_TEST]'
-
-
+table_name = '[ovaregroup-etl-uat].[AzureMasterData].[GENERAL_LEDGER_TEST]'
 
 # *** DROP COLUMNS NOT IN GL TABLE ***
 df = df.drop(columns=['Cuenta', 'Nombre', 'Clase', 'SubClase', 'Rubro', 'SubRubro', 'Client', 'Supplier'])
-
 
 # df = df.fillna(value='NULL')
 for col in df.select_dtypes(include=['float']).columns:
