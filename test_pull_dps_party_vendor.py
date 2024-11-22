@@ -1,16 +1,16 @@
-
-
-
-
-
 import os
 import pandas as pd
 import pyodbc
 
 
-SERVER = 'srv17.advertys.com.ar,13577'
-USERNAME = "extbase"
-PASSWORD = "2024Base@"
+mapping_file_state = 'location_abbreviations/dps_province_abbrev.csv'
+mapping_file_country = 'location_abbreviations/dps_country_abbrev.csv'
+investment_id_file = 'other data files/Field Mappings from DPS.xlsx'
+investment_id_sheet = 'Investment IDs'
+
+SERVER = os.getenv('DPS_DATABASE_SERVER', 'DefaultKeyIfNotSet')
+USERNAME = os.getenv('DPS_DATABASE_USERNAME', 'DefaultKeyIfNotSet')
+PASSWORD = os.getenv('DPS_DATABASE_PASSWORD', 'DefaultKeyIfNotSet')
 
 DATABASE1 = 'Advertys_FCB'
 DATABASE2 = 'Advertys_Infinity'
@@ -29,26 +29,21 @@ except Exception as e:
 print(f'Connection succeeded.')
 
 
-# 0: office_name, 1: office_code, 2: investment_id
-investment = {
-    'Advertys_FCB': ['FCB', '81', 1081,],
-    'Advertys_Infinity': ['Infinity', '82', 1082,],
-    'Advertys_XYZ': ['XYZ', '83', 1083,],
-}
+investment_df = pd.read_excel(investment_id_file, sheet_name=investment_id_sheet)
 
 query = f"""SELECT 
     '{DATABASE1}' as [SOURCE_DATA],
     'dps' as [SOURCE_SYSTEM],
     'VENDOR' as [PARTY_TYPE],
-    '{investment[DATABASE1][2]}' as [INVESTMENT_ID],
+    '{investment_df.loc[investment_df['SOURCE_DATA'] == DATABASE1, 'INVESTMENT_ID'].iloc[0]}' as [INVESTMENT_ID],
     [PR_CODE] = prov.IdProveedor,
     [MSTR_CREATE_TIME] = prov.FechaAlta,
     [ACTIVE_FLAG] = prov.Habilitado,
     [PARTY_NAME] = prov.Nombre,
     [PARTY_ADDRESS1] = dat.Direccion,
     [PARTY_CITY] = dat.Localidad,
-    [PARTY_STATE] = pro.Nombre,
-    [PARTY_COUNTRY] = pai.Nombre,
+    [Provincia] = pro.Nombre,
+    [Pais] = pai.Nombre,
     [PARTY_ZIP] = dat.CodigoPostal,
     [PARTY_MFOOTER] = con.Nombre
 FROM 
@@ -62,15 +57,15 @@ SELECT
     '{DATABASE2}' as [SOURCE_DATA],
     'dps' as [SOURCE_SYSTEM],
     'VENDOR' as [PARTY_TYPE],
-    '{investment[DATABASE2][2]}' as [INVESTMENT_ID],
+    '{investment_df.loc[investment_df['SOURCE_DATA'] == DATABASE2, 'INVESTMENT_ID'].iloc[0]}' as [INVESTMENT_ID],
     [PR_CODE] = prov.IdProveedor,
     [MSTR_CREATE_TIME] = prov.FechaAlta,
     [ACTIVE_FLAG] = prov.Habilitado,
     [PARTY_NAME] = prov.Nombre,
     [PARTY_ADDRESS1] = dat.Direccion,
     [PARTY_CITY] = dat.Localidad,
-    [PARTY_STATE] = pro.Nombre,
-    [PARTY_COUNTRY] = pai.Nombre,
+    [Provincia] = pro.Nombre,
+    [Pais] = pai.Nombre,
     [PARTY_ZIP] = dat.CodigoPostal,
     [PARTY_MFOOTER] = con.Nombre
 FROM 
@@ -84,15 +79,15 @@ SELECT
     '{DATABASE3}' as [SOURCE_DATA],
     'dps' as [SOURCE_SYSTEM],
     'VENDOR' as [PARTY_TYPE],
-    '{investment[DATABASE3][2]}' as [INVESTMENT_ID],
+    '{investment_df.loc[investment_df['SOURCE_DATA'] == DATABASE3, 'INVESTMENT_ID'].iloc[0]}' as [INVESTMENT_ID],
     [PR_CODE] = prov.IdProveedor,
     [MSTR_CREATE_TIME] = prov.FechaAlta,
     [ACTIVE_FLAG] = prov.Habilitado,
     [PARTY_NAME] = prov.Nombre,
     [PARTY_ADDRESS1] = dat.Direccion,
     [PARTY_CITY] = dat.Localidad,
-    [PARTY_STATE] = pro.Nombre,
-    [PARTY_COUNTRY] = pai.Nombre,
+    [Provincia] = pro.Nombre,
+    [Pais] = pai.Nombre,
     [PARTY_ZIP] = dat.CodigoPostal,
     [PARTY_MFOOTER] = con.Nombre
 FROM 
@@ -127,12 +122,33 @@ df = pd.DataFrame.from_records(rows, columns=columns)
 
 df['PARTY_ID'] = df['SOURCE_DATA'] + "-" + df['INVESTMENT_ID'].astype(str) + "-" + df['PR_CODE'].astype(str) + "_" + df['PARTY_TYPE']
 
-# df['CREATED_BY'] = (df['CREATED_BY_fn'].str[:2] + df['CREATED_BY_ln'].str[:2]).str.upper() + "-" + df['CREATED_BY_id'].astype(str)
-df = df.drop(columns=['PR_CODE',])
+mapping_df_state = pd.read_csv(mapping_file_state, keep_default_na=False)
+mapping_df_state = mapping_df_state.astype(object)
+mapping_df_state['Provincia'] = mapping_df_state['Provincia'].str.lower()
+df['Provincia'] = df['Provincia'].str.lower()
+df = pd.merge(
+    df,
+    mapping_df_state,
+    on=['Provincia'],
+    how='left'
+)
+
+mapping_df_country = pd.read_csv(mapping_file_country, keep_default_na=False)
+mapping_df_country = mapping_df_country.astype(object)
+mapping_df_country['Pais'] = mapping_df_country['Pais'].str.lower()
+df['Pais'] = df['Pais'].str.lower()
+df = pd.merge(
+    df,
+    mapping_df_country,
+    on=['Pais'],
+    how='left'
+)
+
+df = df.drop(columns=['PR_CODE', 'Provincia', 'Pais',])
 
 print(df)
 
-df.to_csv('dps_query_vendor.csv', index=False)
+df.to_csv('dps_query_vendor_2.csv', index=False)
 
 # Close the cursor and connection
 cursor.close()
