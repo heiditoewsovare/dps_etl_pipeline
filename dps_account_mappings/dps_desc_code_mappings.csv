@@ -1,0 +1,425 @@
+GLA_DESCRIPTION,GLA_CODE Split A,GLA_CODE Split B,GLA_CODE Split C,Code Concat,GLA_CODE
+401 K Payable,80.0,2410.0,0.0,80.2410.00,80.2410.00
+401k Expense,,,,,
+A/R Write-Off,10.0,1230.0,0.0,10.1230.00,10.1230.00
+Acc Amort - Building,30.0,1546.0,0.0,30.1546.00,30.1546.00
+Acc Amort - Building improvements,30.0,1505.0,0.0,30.1505.00,30.1505.00
+Acc Amort - Computer Equipment,20.0,1516.0,0.0,20.1516.00,20.1516.00
+Acc Amort - Deferred charges,30.0,1515.0,0.0,30.1515.00,30.1515.00
+Acc Amort - Furniture &  Fixtures,40.0,1535.0,0.0,40.1535.00,40.1535.00
+Acc Amort - Furniture and Fxitures,50.0,1535.0,0.0,50.1535.00,50.1535.00
+Acc Amort - Heavy Equipment,40.0,1555.0,0.0,40.1555.00,40.1555.00
+Acc Amort - Leasehold Improvements,50.0,1505.0,0.0,50.1505.00,50.1505.00
+Acc amort - Misc Equipment,40.0,1585.0,0.0,40.1585.00,40.1585.00
+Acc Amort - Moulds,40.0,1575.0,0.0,40.1575.00,40.1575.00
+Acc Amort - Office Equipment,20.0,1521.0,0.0,20.1521.00,20.1521.00
+Acc Amort - proflex Molds,50.0,1575.0,0.0,50.1575.00,50.1575.00
+Acc Amort - Tools,40.0,1565.0,0.0,40.1565.00,40.1565.00
+Accounting Fees,30.0,6600.0,0.0,30.6600.00,30.6600.00
+Accounts Payable,30.0,2000.0,0.0,30.2000.00,30.2000.00
+Accounts Payable - Ad Cucina,80.0,2045.0,0.0,80.2045.00,80.2045.00
+Accounts Payable - Ad Cucina Operating Expenses,80.0,2050.0,0.0,80.2050.00,80.2050.00
+Accounts Payable - Argentina,80.0,2055.0,0.0,80.2055.00,80.2055.00
+Accounts Payable - Employee,80.0,2030.0,0.0,80.2030.00,80.2030.00
+Accounts Payable - Insurance,10.0,2050.0,0.0,10.2050.00,10.2050.00
+Accounts Payable - Other,80.0,2040.0,0.0,80.2040.00,80.2040.00
+Accounts Payable - Overhead,10.0,2010.0,0.0,10.2010.00,10.2010.00
+Accounts Payable - TogetherWith,30.0,2045.0,0.0,30.2045.00,30.2045.00
+Accounts Payable-Agency & Production,90.0,2000.0,0.0,90.2000.00,90.2000.00
+Accounts Payable-Media,80.0,2020.0,0.0,80.2020.00,80.2020.00
+Accounts Payable-Production,80.0,2000.0,0.0,80.2000.00,80.2000.00
+Accounts Receivable,80.0,1200.0,0.0,80.1200.00,80.1200.00
+Accounts Receivable - Ad Cucina,10.0,1224.0,0.0,10.1224.00,10.1224.00
+Accounts Receivable - Cash Advance,10.0,1220.0,0.0,10.1220.00,10.1220.00
+Accounts Receivable - Other,80.0,1210.0,0.0,80.1210.00,80.1210.00
+Accounts Receivable - Self Funded Insurance,10.0,1214.0,0.0,10.1214.00,10.1214.00
+Accounts Receivable - Togetherwith Group,30.0,1237.0,0.0,30.1237.00,30.1237.00
+Accounts Receivable Other - DS/RD,10.0,1221.0,0.0,10.1221.00,10.1221.00
+Accrued A/P - Media,30.0,2110.0,0.0,30.2110.00,30.2110.00
+Accrued A/P - Production,80.0,2100.0,0.0,80.2100.00,80.2100.00
+Accrued A/P Media Old System,30.0,2112.0,0.0,30.2112.00,30.2112.00
+Accrued Agency Promotion,30.0,2122.0,0.0,30.2122.00,30.2122.00
+Accrued Bonus Expense,2121.0,,0.0,2121.00,2121.00
+Accrued Bonus Payable,30.0,2121.0,0.0,30.2121.00,30.2121.00
+Accrued CPA,80.0,2120.0,0.0,80.2120.00,80.2120.00
+Accrued Derby,10.0,2127.0,0.0,10.2127.00,10.2127.00
+Accrued Dues,30.0,2129.0,0.0,30.2129.00,30.2129.00
+Accrued Employee Relocation,10.0,2126.0,0.0,10.2126.00,10.2126.00
+Accrued ESOP Expense,30.0,2134.0,0.0,30.2134.00,30.2134.00
+Accrued Expenses,90.0,2120.0,0.0,90.2120.00,90.2120.00
+Accrued General Insurance,10.0,2132.0,0.0,10.2132.00,10.2132.00
+Accrued Interest Expense,10.0,2133.0,0.0,10.2133.00,10.2133.00
+Accrued Legal,80.0,2124.0,0.0,80.2124.00,80.2124.00
+Accrued Liabilities,30.0,2005.0,0.0,30.2005.00,30.2005.00
+Accrued Management Services,80.0,2130.0,0.0,80.2130.00,80.2130.00
+Accrued New Business,30.0,2123.0,0.0,30.2123.00,30.2123.00
+Accrued Party,10.0,2125.0,0.0,10.2125.00,10.2125.00
+Accrued Profit Sharing,10.0,2131.0,0.0,10.2131.00,10.2131.00
+Accrued Research/Media Measurement,30.0,2128.0,0.0,30.2128.00,30.2128.00
+Accrued Salaries & Bonus,90.0,2130.0,0.0,90.2130.00,90.2130.00
+Accum Amortization - Goodwill,40.0,1601.0,0.0,40.1601.00,40.1601.00
+Accumulated  Depreciation,30.0,1600.0,0.0,30.1600.00,30.1600.00
+Accumulated Amortization - ROU Asset,10.0,1590.0,0.0,10.1590.00,10.1590.00
+Acquisition Expense,10.0,8803.0,0.0,10.8803.00,10.8803.00
+Ad Cucina Community,30.0,6304.0,0.0,30.6304.00,30.6304.00
+Ad Cucina Utilities Expense,30.0,6603.0,0.0,30.6603.00,30.6603.00
+Advanced Sales - Production,80.0,2200.0,0.0,80.2200.00,80.2200.00
+Advertising & Marketing,,,,,
+Advertising and Promotion,6405.0,,0.0,6405.00,6405.00
+Advertising Expense,30.0,6720.0,0.0,30.6720.00,30.6720.00
+Advertising Income,,,,,
+Agency Community,30.0,6304.0,0.0,30.6304.00,30.6304.00
+Agency Promotion,80.0,6405.0,0.0,80.6405.00,80.6405.00
+Airfare/Lodging,10.0,6320.0,0.0,10.6320.00,10.6320.00
+Allowance For Doubtful Accounts,30.0,1230.0,0.0,30.1230.00,30.1230.00
+Amazon Clearing Account,,,,,
+Amazon Expense Account,,,,,
+Amazon Merchant Fees,8025.0,,0.0,8025.00,8025.00
+Amortization Expense,30.0,6250.0,0.0,30.6250.00,30.6250.00
+Artwork,10.0,1550.0,0.0,10.1550.00,10.1550.00
+Automobile,10.0,6440.0,0.0,10.6440.00,10.6440.00
+Automobile Expense,6300.0,,0.0,6300.00,6300.00
+Bad Debt Expense,30.0,6435.0,0.0,30.6435.00,30.6435.00
+Bank Fees,80.0,8020.0,0.0,80.8020.00,80.8020.00
+Bonus Expense,80.0,6165.0,0.0,80.6165.00,80.6165.00
+Broker Fees,30.0,6615.0,0.0,30.6615.00,30.6615.00
+Building,30.0,1545.0,0.0,30.1545.00,30.1545.00
+Business/Property Tax,90.0,6420.0,0.0,90.6420.00,90.6420.00
+Capital Lease Liability,60.0,2440.0,0.0,60.2440.00,60.2440.00
+Capital Leases,60.0,2440.0,0.0,60.2440.00,60.2440.00
+Cash in Bank - Chase Bank,80.0,1030.0,0.0,80.1030.00,80.1030.00
+Cash in Bank - Checking,30.0,1000.0,0.0,30.1000.00,30.1000.00
+Cash in Bank - Citibank,80.0,1014.0,0.0,80.1014.00,80.1014.00
+Cash in Bank - Fifth Third,10.0,1025.0,0.0,10.1025.00,10.1025.00
+Cash in Bank - JPM,30.0,1020.0,0.0,30.1020.00,30.1020.00
+Cash in Bank - Old National Checking,10.0,1005.0,0.0,10.1005.00,10.1005.00
+Cash in Bank - Old National Savings,10.0,1015.0,0.0,10.1015.00,10.1015.00
+Cash in Bank - PNC,60.0,1010.0,0.0,60.1010.00,60.1010.00
+Cash in Bank - PNC IMA,10.0,1010.0,0.0,10.1010.00,10.1010.00
+Cash in Bank - SYB,60.0,1012.0,0.0,60.1012.00,60.1012.00
+Cellphones/Internet,10.0,6340.0,0.0,10.6340.00,10.6340.00
+Chase Bank Checking,,,,,
+City Sales & Use Tax Payable,30.0,2320.0,0.0,30.2320.00,30.2320.00
+Client Gifts,80.0,6302.0,0.0,80.6302.00,80.6302.00
+Computer Equipment,80.0,1510.0,0.0,80.1510.00,80.1510.00
+Contract Labor,20.0,6150.0,0.0,20.6150.00,20.6150.00
+Contributed capital,10.0,1450.0,0.0,10.1450.00,10.1450.00
+Contributed Capital Account,90.0,3050.0,0.0,90.3050.00,90.3050.00
+Contributed Capital Credit,3045.0,,0.0,3045.00,3045.00
+Contributed Capital Credit - Ad Cucina,10.0,3075.0,0.0,10.3075.00,10.3075.00
+Contributed Capital Credit - TGW,10.0,3070.0,0.0,10.3070.00,10.3070.00
+Corporate allocation expense,10.0,6740.0,0.0,10.6740.00,10.6740.00
+Corporate Income Taxes,10.0,9000.0,0.0,10.9000.00,10.9000.00
+Corporate Overhead Allocation,80.0,8035.0,0.0,80.8035.00,80.8035.00
+COS,40.0,5090.0,0.0,40.5090.00,40.5090.00
+COS - Consulting,10.0,5090.0,0.0,10.5090.00,10.5090.00
+COS - Data,40.0,5065.0,0.0,40.5065.00,40.5065.00
+COS - Digital Production,90.0,5050.0,0.0,90.5050.00,90.5050.00
+COS - Direct Mail,40.0,5055.0,0.0,40.5055.00,40.5055.00
+COS - Interactive,30.0,5035.0,0.0,30.5035.00,30.5035.00
+COS - Media Default,30.0,5200.0,0.0,30.5200.00,30.5200.00
+COS - Media Internet,30.0,5230.0,0.0,30.5230.00,30.5230.00
+COS - Media Internet Rebate,30.0,5231.0,0.0,30.5231.00,30.5231.00
+COS - Media Magazine,30.0,5210.0,0.0,30.5210.00,30.5210.00
+COS - Media Magazine Rebate,10.0,5211.0,0.0,10.5211.00,10.5211.00
+COS - Media Newspaper,30.0,5220.0,0.0,30.5220.00,30.5220.00
+COS - Media Newspaper Rebate,30.0,5221.0,0.0,30.5221.00,30.5221.00
+COS - Media Out of Home,30.0,5240.0,0.0,30.5240.00,30.5240.00
+COS - Media Out of Home Rebate,30.0,5241.0,0.0,30.5241.00,30.5241.00
+COS - Media Radio,10.0,5250.0,0.0,10.5250.00,10.5250.00
+COS - Media Radio Rebate,10.0,5251.0,0.0,10.5251.00,10.5251.00
+COS - Media Television,80.0,5260.0,0.0,80.5260.00,80.5260.00
+COS - Media Television Rebate,10.0,5261.0,0.0,10.5261.00,10.5261.00
+COS - Online,50.0,5092.0,0.0,50.5092.00,50.5092.00
+COS - Photography,30.0,5020.0,0.0,30.5020.00,30.5020.00
+COS - Production,80.0,5010.0,0.0,80.5010.00,80.5010.00
+COS - Production Default,10.0,5000.0,0.0,10.5000.00,10.5000.00
+COS - Production Rebate,30.0,5011.0,0.0,30.5011.00,30.5011.00
+COS - Retail Print Media,30.0,5280.0,0.0,30.5280.00,30.5280.00
+COS - Retail Print Media Rebate,10.0,5281.0,0.0,10.5281.00,10.5281.00
+COS - Retail Print Production,30.0,5030.0,0.0,30.5030.00,30.5030.00
+COS - Retainer Fees,80.0,5040.0,0.0,80.5040.00,80.5040.00
+COS - Video,30.0,5045.0,0.0,30.5045.00,30.5045.00
+COS - Wholesale,50.0,5093.0,0.0,50.5093.00,50.5093.00
+Cost of Goods Sold,,,,,
+CPA Expense,80.0,6505.0,0.0,80.6505.00,80.6505.00
+Credit Card Expense,30.0,8030.0,0.0,30.8030.00,30.8030.00
+CSI/V Card,10.0,1000.0,0.0,10.1000.00,10.1000.00
+Currency Exchange Gain/Loss,10.0,7050.0,0.0,10.7050.00,10.7050.00
+Data Processing,80.0,6240.0,0.0,80.6240.00,80.6240.00
+Deferred Compensation,10.0,6180.0,0.0,10.6180.00,10.6180.00
+Deferred COS - Production,80.0,2105.0,0.0,80.2105.00,80.2105.00
+Deferred Lease Incentive Liability,30.0,2530.0,0.0,30.2530.00,30.2530.00
+Deferred Salary Expense,10.0,6160.0,0.0,10.6160.00,10.6160.00
+Deferred Sales - Production,30.0,2200.0,0.0,30.2200.00,30.2200.00
+Delivery & Postage,10.0,6520.0,0.0,10.6520.00,10.6520.00
+Depreciation Expense,80.0,6245.0,0.0,80.6245.00,80.6245.00
+Direct Costs of Production,,,,,
+Direct Deposit Liabilities,2015.0,,0.0,2015.00,2015.00
+Discounts Taken,60.0,7040.0,0.0,60.7040.00,60.7040.00
+Distribution Center,,,,,
+Donations,30.0,6445.0,0.0,30.6445.00,30.6445.00
+Dues,30.0,6420.0,0.0,30.6420.00,30.6420.00
+Dues & Subscriptions,10.0,6630.0,0.0,10.6630.00,10.6630.00
+Duties & Taxes,,,,,
+Earned Unbilled (wip labor/io),80.0,1320.0,0.0,80.1320.00,80.1320.00
+Earned Unbilled Revenue,80.0,4050.0,0.0,80.4050.00,80.4050.00
+Employee Benefits,90.0,6240.0,0.0,90.6240.00,90.6240.00
+Employee Gifts,80.0,6301.0,0.0,80.6301.00,80.6301.00
+Employee Health Benefits,10.0,6240.0,0.0,10.6240.00,10.6240.00
+Employee Insurance,70.0,6120.0,0.0,70.6120.00,70.6120.00
+Employee Insurance  - Print Production,50.0,6120.0,9.0,50.6120.09,50.6120.09
+Employee Insurance  - Production,30.0,6120.0,3.0,30.6120.03,30.6120.03
+Employee Insurance  - Project Management,30.0,6120.0,17.0,30.6120.17,30.6120.17
+Employee Insurance  - Technology/Development,30.0,6120.0,4.0,30.6120.04,30.6120.04
+Employee Insurance - Account Service,30.0,6120.0,1.0,30.6120.01,30.6120.01
+Employee Insurance - Accounting,80.0,6120.0,7.0,80.6120.07,80.6120.07
+Employee Insurance - Cobra,10.0,6125.0,0.0,10.6125.00,10.6125.00
+Employee Insurance - Creative,30.0,6120.0,2.0,30.6120.02,30.6120.02
+Employee Insurance - Data Analytics & Reporting,30.0,6120.0,16.0,30.6120.16,30.6120.16
+Employee Insurance - Executive Overhead,80.0,6120.0,0.0,80.6120.00,80.6120.00
+Employee Insurance - General Office,30.0,6120.0,8.0,30.6120.08,30.6120.08
+Employee Insurance - Human Resources,80.0,6120.0,10.0,80.6120.10,80.6120.10
+Employee Insurance - Information Systems,80.0,6120.0,11.0,80.6120.11,80.6120.11
+Employee Insurance - Marketing Science,10.0,6120.0,15.0,10.6120.15,10.6120.15
+Employee Insurance - Marketing/Public Relations,10.0,6120.0,6.0,10.6120.06,10.6120.06
+Employee Insurance - New Business,80.0,6120.0,13.0,80.6120.13,80.6120.13
+Employee Insurance - Operations,30.0,6120.0,8.0,30.6120.08,30.6120.08
+Employee Insurance - Performance Marketing,30.0,6120.0,5.0,30.6120.05,30.6120.05
+Employee Insurance - Photography,10.0,6120.0,12.0,10.6120.12,10.6120.12
+Employee Insurance - Print Production,10.0,6120.0,9.0,10.6120.09,10.6120.09
+Employee Insurance - Production,30.0,6120.0,3.0,30.6120.03,30.6120.03
+Employee Insurance - Project Management,30.0,6120.0,17.0,30.6120.17,30.6120.17
+Employee Insurance - Strategy,80.0,6120.0,14.0,80.6120.14,80.6120.14
+Employee Insurance - Technology/Development,30.0,6120.0,4.0,30.6120.04,30.6120.04
+Employee Insurance - Video,10.0,6120.0,18.0,10.6120.18,10.6120.18
+Employee Insurance - Video/Photography,60.0,6120.0,18.0,60.6120.18,60.6120.18
+Employee Parking/Tolls,30.0,6135.0,0.0,30.6135.00,30.6135.00
+Employee Relocation,30.0,6170.0,0.0,30.6170.00,30.6170.00
+Employee severance,20.0,6165.0,0.0,20.6165.00,20.6165.00
+Equipment Lease Expense,30.0,6210.0,0.0,30.6210.00,30.6210.00
+Equipment Maintenance/Repairs - Photography Studio,10.0,6625.0,12.0,10.6625.12,10.6625.12
+ESOP Distribution,30.0,8200.0,0.0,30.8200.00,30.8200.00
+ESOP Expense,30.0,6515.0,0.0,30.6515.00,30.6515.00
+Fast Pay,80.0,1000.0,0.0,80.1000.00,80.1000.00
+Field Sales /Commission Expense,,,,,
+Fifth Third Bank Checking,,,,,
+Fifth Third Checking,1000.0,,0.0,1000.00,1000.00
+Freelance,90.0,6190.0,0.0,90.6190.00,90.6190.00
+Freight,,,,,
+FSA Payable,80.0,2415.0,0.0,80.2415.00,80.2415.00
+Furniture and Fixtures,80.0,1530.0,0.0,80.1530.00,80.1530.00
+Garnishment/Child Support Payable,10.0,2420.0,0.0,10.2420.00,10.2420.00
+General Insurance,80.0,6400.0,0.0,80.6400.00,80.6400.00
+Gift Cards,,,,,
+Gift Cards Outstanding,,,,,
+Goodwill,80.0,1710.0,0.0,80.1710.00,80.1710.00
+Ground Transportation,90.0,6330.0,0.0,90.6330.00,90.6330.00
+HSA Payable,80.0,2405.0,0.0,80.2405.00,80.2405.00
+HST/GST payable,30.0,2300.0,0.0,30.2300.00,30.2300.00
+Insurance -  Operating,30.0,6730.0,0.0,30.6730.00,30.6730.00
+Insurance Expense,6400.0,,0.0,6400.00,6400.00
+Intercompany - ComData,1000.0,,0.0,1000.00,1000.00
+Intercompany Billing,30.0,1235.0,0.0,30.1235.00,30.1235.00
+Interest Expense,30.0,8010.0,0.0,30.8010.00,30.8010.00
+Interest Income,10.0,7010.0,0.0,10.7010.00,10.7010.00
+Inventory,40.0,1250.0,0.0,40.1250.00,40.1250.00
+Inventory Adjustment,,,,,
+Inventory Asset,,,,,
+Investment,60.0,1735.0,0.0,60.1735.00,60.1735.00
+Investment Income Net,10.0,7020.0,0.0,10.7020.00,10.7020.00
+Lease Liability - capital leases,60.0,2521.0,0.0,60.2521.00,60.2521.00
+Lease Liability - operating leases,10.0,2580.0,0.0,10.2580.00,10.2580.00
+Leasehold Improvements,30.0,1500.0,0.0,30.1500.00,30.1500.00
+Legal Expense,80.0,6510.0,0.0,80.6510.00,80.6510.00
+Legal Services,30.0,6610.0,0.0,30.6610.00,30.6610.00
+License and Fees,90.0,6620.0,0.0,90.6620.00,90.6620.00
+LOC - Chase Bank,,,,,
+Long Term Incentive Plan Obligation,10.0,2520.0,0.0,10.2520.00,10.2520.00
+LTIP Expense,10.0,6175.0,0.0,10.6175.00,10.6175.00
+Management Services,80.0,6500.0,0.0,80.6500.00,80.6500.00
+Meals/Entertainment,10.0,6330.0,0.0,10.6330.00,10.6330.00
+Merchandise Giveaway Expense,,,,,
+Merchandise Sample Expense,,,,,
+Merchant Fees,40.0,8025.0,0.0,40.8025.00,40.8025.00
+Merchant Fees - Paypal,,,,,
+Merchant Fees - Shopify,,,,,
+Miscellaneous Expense,80.0,8000.0,0.0,80.8000.00,80.8000.00
+Miscellaneous Income,80.0,7000.0,0.0,80.7000.00,80.7000.00
+Mobile Phone/Internet,90.0,6360.0,0.0,90.6360.00,90.6360.00
+New Business Expense,80.0,6425.0,0.0,80.6425.00,80.6425.00
+Non-billable Client Entertainment Exp.,90.0,6040.0,0.0,90.6040.00,90.6040.00
+Non-billable Client Media Expense,10.0,6020.0,0.0,10.6020.00,10.6020.00
+Non-billable Client Prod Expense,30.0,6000.0,0.0,30.6000.00,30.6000.00
+Non-billable Client T&E Expense,80.0,6010.0,0.0,80.6010.00,80.6010.00
+Note Payable - Bruce Hardy,60.0,2501.0,0.0,60.2501.00,60.2501.00
+Note Payable - Chase,10.0,2510.0,0.0,10.2510.00,10.2510.00
+Note Payable - Fifth Third,10.0,2510.0,0.0,10.2510.00,10.2510.00
+Note Payable - LOC SYB,60.0,2500.0,0.0,60.2500.00,60.2500.00
+Note Payable - Stockholders,10.0,2515.0,0.0,10.2515.00,10.2515.00
+Note Receivable - Bridge Bicycles,20.0,1730.0,0.0,20.1730.00,20.1730.00
+Note Receivable from Bridge Bike Works,10.0,1725.0,0.0,10.1725.00,10.1725.00
+Note Receivable from CivitasNow,10.0,1750.0,0.0,10.1750.00,10.1750.00
+Note Receivable from Executive & ADM,10.0,1730.0,0.0,10.1730.00,10.1730.00
+Note Receivable from Sports Casuals,10.0,1740.0,0.0,10.1740.00,10.1740.00
+Notes Payable,10.0,2500.0,0.0,10.2500.00,10.2500.00
+Office Cleaning,10.0,6470.0,0.0,10.6470.00,10.6470.00
+Office Equipment,30.0,1520.0,0.0,30.1520.00,30.1520.00
+Office expenses,30.0,6540.0,0.0,30.6540.00,30.6540.00
+Office Supplies,80.0,6205.0,0.0,80.6205.00,80.6205.00
+Opening Balance Equity,,,,,
+Other Assets,80.0,1700.0,0.0,80.1700.00,80.1700.00
+Other Income,10.0,7000.0,0.0,10.7000.00,10.7000.00
+Other Receivables,10.0,1220.0,0.0,10.1220.00,10.1220.00
+Overhead Meals & Entertainment,80.0,6300.0,0.0,80.6300.00,80.6300.00
+Overhead Meals/Travel - Photography Studio,10.0,6615.0,12.0,10.6615.12,10.6615.12
+Overhead Shipping,30.0,6235.0,0.0,30.6235.00,30.6235.00
+Overhead Travel,80.0,6305.0,0.0,80.6305.00,80.6305.00
+Owner's Distribution,30.0,3120.0,0.0,30.3120.00,30.3120.00
+Parking,30.0,6310.0,0.0,30.6310.00,30.6310.00
+Paypal Holding Account,,,,,
+Payroll,90.0,6100.0,0.0,90.6100.00,90.6100.00
+Payroll  - Account Service,60.0,6100.0,1.0,60.6100.01,60.6100.01
+Payroll  - Creative,30.0,6100.0,2.0,30.6100.02,30.6100.02
+Payroll  - Data Analytics & Reporting,30.0,6100.0,16.0,30.6100.16,30.6100.16
+Payroll  - Strategy,30.0,6100.0,14.0,30.6100.14,30.6100.14
+Payroll  - Technology/Development,30.0,6100.0,4.0,30.6100.04,30.6100.04
+Payroll - Account Service,30.0,6100.0,1.0,30.6100.01,30.6100.01
+Payroll - Accounting,80.0,6100.0,7.0,80.6100.07,80.6100.07
+Payroll - Bonuses,50.0,6105.0,0.0,50.6105.00,50.6105.00
+Payroll - CPP + EI,10.0,6110.0,0.0,10.6110.00,10.6110.00
+Payroll - Creative,80.0,6100.0,2.0,80.6100.02,80.6100.02
+Payroll - Data Analytics & Reporting,80.0,6100.0,16.0,80.6100.16,80.6100.16
+Payroll - Employer Health Tax,10.0,6140.0,0.0,10.6140.00,10.6140.00
+Payroll - Executive Overhead,80.0,6100.0,0.0,80.6100.00,80.6100.00
+Payroll - General Office,30.0,6100.0,8.0,30.6100.08,30.6100.08
+Payroll - Group RRSP/TFSA,10.0,6150.0,0.0,10.6150.00,10.6150.00
+Payroll - Human Resources,80.0,6100.0,10.0,80.6100.10,80.6100.10
+Payroll - Information Systems,80.0,6100.0,11.0,80.6100.11,80.6100.11
+Payroll - Marketing,20.0,6100.0,6.0,20.6100.06,20.6100.06
+Payroll - Marketing Science,30.0,6100.0,15.0,30.6100.15,30.6100.15
+Payroll - Marketing/Public Relations,10.0,6100.0,6.0,10.6100.06,10.6100.06
+Payroll - New Business,80.0,6100.0,13.0,80.6100.13,80.6100.13
+Payroll - Operations,30.0,6100.0,8.0,30.6100.08,30.6100.08
+Payroll - Performance Marketing,30.0,6100.0,5.0,30.6100.05,30.6100.05
+Payroll - Photography,10.0,6100.0,12.0,10.6100.12,10.6100.12
+Payroll - Print Production,30.0,6100.0,9.0,30.6100.09,30.6100.09
+Payroll - Processing Fee,10.0,6130.0,0.0,10.6130.00,10.6130.00
+Payroll - Production,30.0,6100.0,3.0,30.6100.03,30.6100.03
+Payroll - Project Management,30.0,6100.0,17.0,30.6100.17,30.6100.17
+Payroll - RRSP & TFSA,10.0,6155.0,0.0,10.6155.00,10.6155.00
+Payroll - Strategy,30.0,6100.0,14.0,30.6100.14,30.6100.14
+Payroll - Taxes,10.0,6120.0,0.0,10.6120.00,10.6120.00
+Payroll - Taxes - Data Analytics,20.0,6120.0,16.0,20.6120.16,20.6120.16
+Payroll - Taxes - Executive,20.0,6120.0,0.0,20.6120.00,20.6120.00
+Payroll - Taxes - Information Systems,20.0,6120.0,11.0,20.6120.11,20.6120.11
+Payroll - Technology/Development,30.0,6100.0,4.0,30.6100.04,30.6100.04
+Payroll - Video,10.0,6100.0,18.0,10.6100.18,10.6100.18
+Payroll - Video/Photography,30.0,6100.0,18.0,30.6100.18,30.6100.18
+Payroll - Wages,10.0,6100.0,0.0,10.6100.00,10.6100.00
+Payroll - Wages - Data Analytics,20.0,6100.0,16.0,20.6100.16,20.6100.16
+Payroll - Wages - Executive,20.0,6100.0,0.0,20.6100.00,20.6100.00
+Payroll - Wages - Information Systems,20.0,6100.0,11.0,20.6100.11,20.6100.11
+Payroll Expenses,6100.0,,8.0,6100.08,6100.08
+Payroll Liabilities,10.0,2015.0,0.0,10.2015.00,10.2015.00
+Payroll Taxes,90.0,6200.0,0.0,90.6200.00,90.6200.00
+Payroll Taxes - Account Service,30.0,6110.0,1.0,30.6110.01,30.6110.01
+Payroll Taxes - Accounting,30.0,6110.0,7.0,30.6110.07,30.6110.07
+Payroll Taxes - Creative,30.0,6110.0,2.0,30.6110.02,30.6110.02
+Payroll Taxes - Data Analytics & Reporting,10.0,6110.0,16.0,10.6110.16,10.6110.16
+Payroll Taxes - Executive Overhead,10.0,6110.0,0.0,10.6110.00,10.6110.00
+Payroll Taxes - General Office,60.0,6110.0,8.0,60.6110.08,60.6110.08
+Payroll Taxes - Human Resources,10.0,6110.0,10.0,10.6110.10,10.6110.10
+Payroll Taxes - Information Systems,10.0,6110.0,11.0,10.6110.11,10.6110.11
+Payroll Taxes - Marketing Science,10.0,6110.0,15.0,10.6110.15,10.6110.15
+Payroll Taxes - Marketing/Public Relations,10.0,6110.0,6.0,10.6110.06,10.6110.06
+Payroll Taxes - New Business,30.0,6110.0,13.0,30.6110.13,30.6110.13
+Payroll Taxes - Operations,30.0,6110.0,8.0,30.6110.08,30.6110.08
+Payroll Taxes - Performance Marketing,30.0,6110.0,5.0,30.6110.05,30.6110.05
+Payroll Taxes - Photography,10.0,6110.0,12.0,10.6110.12,10.6110.12
+Payroll Taxes - Print Production,10.0,6110.0,9.0,10.6110.09,10.6110.09
+Payroll Taxes - Production,30.0,6110.0,3.0,30.6110.03,30.6110.03
+Payroll Taxes - Project Management,30.0,6110.0,17.0,30.6110.17,30.6110.17
+Payroll Taxes - Strategy,30.0,6110.0,14.0,30.6110.14,30.6110.14
+Payroll Taxes - Technology/Development,30.0,6110.0,4.0,30.6110.04,30.6110.04
+Payroll Taxes - Video,10.0,6110.0,18.0,10.6110.18,10.6110.18
+Payroll Taxes - Video/Photography,60.0,6110.0,18.0,60.6110.18,60.6110.18
+Payroll/Payroll Tax Liability,10.0,2425.0,0.0,10.2425.00,10.2425.00
+Payroll/Payroll Tax Payable,80.0,2425.0,0.0,80.2425.00,80.2425.00
+Payroll-CPP+ EI - Information Systems,20.0,6110.0,11.0,20.6110.11,20.6110.11
+Photography Supplies - Photography Studio,10.0,6620.0,12.0,10.6620.12,10.6620.12
+Postage,30.0,6230.0,0.0,30.6230.00,30.6230.00
+Prepaid,80.0,1400.0,0.0,80.1400.00,80.1400.00
+Professional Fee Expense,,,,,
+Profit Sharing,10.0,6160.0,0.0,10.6160.00,10.6160.00
+Property Repairs & Maint,92.0,6410.0,0.0,92.6410.00,92.6410.00
+Property Taxes,30.0,9200.0,0.0,30.9200.00,30.9200.00
+PST Payable,50.0,2350.0,0.0,50.2350.00,50.2350.00
+Purchase Orders,,,,,
+Quickbooks Payment fees,,,,,
+Raw mateirals,40.0,1250.0,0.0,40.1250.00,40.1250.00
+Receivable from Ad Cucina,20.0,1222.0,0.0,20.1222.00,20.1222.00
+Receivable from Together With,20.0,1221.0,0.0,20.1221.00,20.1221.00
+Rent Expense,80.0,6200.0,0.0,80.6200.00,80.6200.00
+Rent Expense - Photography Studio,10.0,6600.0,12.0,10.6600.12,10.6600.12
+Rental Car/Mileage expenses,10.0,6300.0,0.0,10.6300.00,10.6300.00
+Rental Revenue,,,,,
+Repairs and Maintenance Expense,30.0,6215.0,0.0,30.6215.00,30.6215.00
+Research/Media Measurement,30.0,6410.0,0.0,30.6410.00,30.6410.00
+Retained Earnings,80.0,3100.0,0.0,80.3100.00,80.3100.00
+Right of Use Asset - operating lease,10.0,1580.0,0.0,10.1580.00,10.1580.00
+Royalty Expense,,,,,
+Sales,40.0,4000.0,0.0,40.4000.00,40.4000.00
+Sales - Consulting,30.0,4000.0,0.0,30.4000.00,30.4000.00
+Sales - Data,40.0,4065.0,0.0,40.4065.00,40.4065.00
+Sales - Digital Production,90.0,4050.0,0.0,90.4050.00,90.4050.00
+Sales - Direct Mail,40.0,4055.0,0.0,40.4055.00,40.4055.00
+Sales - Interactive,30.0,4035.0,0.0,30.4035.00,30.4035.00
+Sales - Media Default,30.0,4200.0,0.0,30.4200.00,30.4200.00
+Sales - Media Internet,30.0,4230.0,0.0,30.4230.00,30.4230.00
+Sales - Media Magazine,30.0,4210.0,0.0,30.4210.00,30.4210.00
+Sales - Media Newspaper,30.0,4220.0,0.0,30.4220.00,30.4220.00
+Sales - Media Out of Home,30.0,4240.0,0.0,30.4240.00,30.4240.00
+Sales - Media Radio,10.0,4250.0,0.0,10.4250.00,10.4250.00
+Sales - Media Television,80.0,4260.0,0.0,80.4260.00,80.4260.00
+Sales - Online,50.0,4300.0,0.0,50.4300.00,50.4300.00
+Sales - Photography,30.0,4020.0,0.0,30.4020.00,30.4020.00
+Sales - Production,80.0,4010.0,0.0,80.4010.00,80.4010.00
+Sales - Production Default,10.0,4000.0,0.0,10.4000.00,10.4000.00
+Sales - Retail Print Media,30.0,4280.0,0.0,30.4280.00,30.4280.00
+Sales - Retail Print Production,30.0,4030.0,0.0,30.4030.00,30.4030.00
+Sales - Retainer Fees,80.0,4040.0,0.0,80.4040.00,80.4040.00
+Sales - Retainer Fees Interactive,10.0,4040.0,4.0,10.4040.04,10.4040.04
+Sales - Video,80.0,4045.0,0.0,80.4045.00,80.4045.00
+Sales - Wholesale,50.0,4100.0,0.0,50.4100.00,50.4100.00
+Sales Orders,,,,,
+Sales Revenue,,,,,
+Sales Tax Payable,,,,,
+Salisbury Bank,1000.0,,0.0,1000.00,1000.00
+Service Revenue,,,,,
+Shipping and Delivery Income,,,,,
+Shopify Fees,8025.0,,0.0,8025.00,8025.00
+Shopify Holding,,,,,
+State Sales & Use Tax Payable,30.0,2300.0,0.0,30.2300.00,30.2300.00
+Subcontractors/Freelance,30.0,6190.0,0.0,30.6190.00,30.6190.00
+Subscriptions,80.0,6415.0,0.0,80.6415.00,80.6415.00
+Suspense,30.0,9990.0,0.0,30.9990.00,30.9990.00
+Tax Payable,90.0,2330.0,0.0,90.2330.00,90.2330.00
+Taxes & Licenses,80.0,6430.0,0.0,80.6430.00,80.6430.00
+Taxi,10.0,6350.0,0.0,10.6350.00,10.6350.00
+Telephone Expense,80.0,6220.0,0.0,80.6220.00,80.6220.00
+Tips,50.0,6150.0,0.0,50.6150.00,50.6150.00
+Tools,40.0,1560.0,0.0,40.1560.00,40.1560.00
+Travel Expense,6305.0,,0.0,6305.00,6305.00
+Tuition Reimbursement/Seminars,30.0,6130.0,0.0,30.6130.00,30.6130.00
+Undeposited Funds,,,,,
+United Way/Fund for the Arts Payable,10.0,2400.0,0.0,10.2400.00,10.2400.00
+Unrealized Appreciation/Depreciation in Investments,10.0,7025.0,0.0,10.7025.00,10.7025.00
+Unreleased ESOP Shares,10.0,3010.0,0.0,10.3010.00,10.3010.00
+Utilities,30.0,6500.0,0.0,30.6500.00,30.6500.00
+Utilities Expense,80.0,6603.0,0.0,80.6603.00,80.6603.00
+Wellness Expense,30.0,6140.0,0.0,30.6140.00,30.6140.00
+Work in Progress - Production,30.0,1300.0,0.0,30.1300.00,30.1300.00
+Work in Progress - Production (vendor),80.0,1300.0,0.0,80.1300.00,80.1300.00
+Workshop supplies,40.0,6530.0,0.0,40.6530.00,40.6530.00
+Year End Clearing,80.0,9999.0,0.0,80.9999.00,80.9999.00
