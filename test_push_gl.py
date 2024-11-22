@@ -3,10 +3,10 @@ import pandas as pd
 import pyodbc
 
 
-SERVER = 'ovaregroup-analytics1.database.windows.net'
-DATABASE = 'ovaregroup-etl-uat'
-USERNAME = "analytics_service_account_etl" #'analytics_service_account_etl'
-PASSWORD = "!0N8QBi2iXY" #'!0N8QBi2iXY'
+SERVER = os.getenv('DW_DATABASE_SERVER', 'DefaultKeyIfNotSet')
+DATABASE = os.getenv('DW_DATABASE_NAME', 'DefaultKeyIfNotSet')
+USERNAME = os.getenv('DW_DATABASE_USERNAME', 'DefaultKeyIfNotSet')
+PASSWORD = os.getenv('DW_DATABASE_PASSWORD', 'DefaultKeyIfNotSet')
 
 
 dsn="DRIVER={SQL SERVER};server=" + f"{SERVER};database={DATABASE};uid={USERNAME};pwd={PASSWORD}"
@@ -21,7 +21,7 @@ except Exception as e:
 
 print(f'Connection succeeded.')
 
-data_file = 'dps_query_map_test_4.csv'
+data_file = 'dps_query_map_test_9.csv'
 df = pd.read_csv(data_file)
 
 

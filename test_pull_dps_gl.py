@@ -3,10 +3,11 @@ import pandas as pd
 import pyodbc
 
 
-output_file_name = 'dps_query_map_test_4.csv'
+output_file_name = 'dps_query_map_test_9.csv'
 mapping_file_db1 = 'dps_account_mappings/dps_FCB_account_mappings.csv'
 mapping_file_db2 = 'dps_account_mappings/dps_Infinity_account_mappings.csv'
 mapping_file_db3 = 'dps_account_mappings/dps_XYZ_account_mappings.csv'
+mapping_file_code = 'dps_account_mappings/dps_desc_code_mappings.csv'
 
 
 SERVER = os.getenv('DPS_DATABASE_SERVER', 'DefaultKeyIfNotSet')
@@ -37,7 +38,7 @@ investment = {
     'Advertys_XYZ': ['XYZ', '83', 1083,],
 }
 
-query = f"""SELECT TOP(2000)
+query = f"""SELECT
     '{DATABASE1}' as [SOURCE_DATA],
     'dps' as [SOURCE_SYSTEM],
     [CURRENCY] = mon.Nombre,
@@ -63,9 +64,9 @@ query = f"""SELECT TOP(2000)
     [SubClase] = subcla.Nombre,
     [Rubro] = ru.Nombre,
     [SubRubro] = subru.Nombre
-FROM 
-    [{DATABASE1}].[dbo].[Imputacion] as imp 
-    INNER JOIN [{DATABASE1}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
+FROM
+    [{DATABASE1}].[dbo].[Imputacion] as imp
+    LEFT JOIN [{DATABASE1}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
     LEFT JOIN [{DATABASE1}].[dbo].[Moneda] as mon ON asi.Moneda = mon.IdMoneda
     LEFT JOIN [{DATABASE1}].[dbo].[Empleado] as emp on asi.UsuarioAlta = emp.IdEmpleado
     LEFT JOIN [{DATABASE1}].[dbo].[Cliente] as cli on imp.Cliente = cli.IdCliente
@@ -75,8 +76,9 @@ FROM
     LEFT JOIN [{DATABASE1}].[dbo].[SubClase] as subcla on cue.SubClase = subcla.IdSubClase
     LEFT JOIN [{DATABASE1}].[dbo].[Rubro] as ru on cue.Rubro = ru.IdRubro
     LEFT JOIN [{DATABASE1}].[dbo].[SubRubro] as subru on cue.SubRubro = subru.IdSubRubro
+WHERE YEAR(asi.Fecha) >= YEAR(GETDATE()) - 2
 UNION ALL
-SELECT TOP(2000)
+SELECT
     '{DATABASE2}' as [SOURCE_DATA],
     'dps' as [SOURCE_SYSTEM],
     [CURRENCY] = mon.Nombre,
@@ -102,9 +104,9 @@ SELECT TOP(2000)
     [SubClase] = subcla.Nombre,
     [Rubro] = ru.Nombre,
     [SubRubro] = subru.Nombre
-FROM 
-    [{DATABASE2}].[dbo].[Imputacion] as imp 
-    INNER JOIN [{DATABASE2}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
+FROM
+    [{DATABASE2}].[dbo].[Imputacion] as imp
+    LEFT JOIN [{DATABASE2}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
     LEFT JOIN [{DATABASE2}].[dbo].[Moneda] as mon ON asi.Moneda = mon.IdMoneda
     LEFT JOIN [{DATABASE2}].[dbo].[Empleado] as emp on asi.UsuarioAlta = emp.IdEmpleado
     LEFT JOIN [{DATABASE2}].[dbo].[Cliente] as cli on imp.Cliente = cli.IdCliente
@@ -114,8 +116,9 @@ FROM
     LEFT JOIN [{DATABASE2}].[dbo].[SubClase] as subcla on cue.SubClase = subcla.IdSubClase
     LEFT JOIN [{DATABASE2}].[dbo].[Rubro] as ru on cue.Rubro = ru.IdRubro
     LEFT JOIN [{DATABASE2}].[dbo].[SubRubro] as subru on cue.SubRubro = subru.IdSubRubro
+WHERE YEAR(asi.Fecha) >= YEAR(GETDATE()) - 2
 UNION ALL
-SELECT TOP(2000)
+SELECT
     '{DATABASE3}' as [SOURCE_DATA],
     'dps' as [SOURCE_SYSTEM],
     [CURRENCY] = mon.Nombre,
@@ -142,8 +145,8 @@ SELECT TOP(2000)
     [Rubro] = ru.Nombre,
     [SubRubro] = subru.Nombre
 FROM 
-    [{DATABASE3}].[dbo].[Imputacion] as imp 
-    INNER JOIN [{DATABASE3}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
+    [{DATABASE3}].[dbo].[Imputacion] as imp
+    LEFT JOIN [{DATABASE3}].[dbo].[Asiento] as asi ON imp.Asiento = asi.IdAsiento
     LEFT JOIN [{DATABASE3}].[dbo].[Moneda] as mon ON asi.Moneda = mon.IdMoneda
     LEFT JOIN [{DATABASE3}].[dbo].[Empleado] as emp on asi.UsuarioAlta = emp.IdEmpleado
     LEFT JOIN [{DATABASE3}].[dbo].[Cliente] as cli on imp.Cliente = cli.IdCliente
@@ -153,6 +156,7 @@ FROM
     LEFT JOIN [{DATABASE3}].[dbo].[SubClase] as subcla on cue.SubClase = subcla.IdSubClase
     LEFT JOIN [{DATABASE3}].[dbo].[Rubro] as ru on cue.Rubro = ru.IdRubro
     LEFT JOIN [{DATABASE3}].[dbo].[SubRubro] as subru on cue.SubRubro = subru.IdSubRubro
+WHERE YEAR(asi.Fecha) >= YEAR(GETDATE()) - 2
 """
 
 # connect to database
@@ -185,7 +189,7 @@ df = df.drop(columns=['CREATED_BY_fn', 'CREATED_BY_ln', 'CREATED_BY_id'])
 # create POST_PERIOD_CODE
 df['POST_PERIOD_CODE'] = df['TRANSACTION_DATE'].dt.year * 100 + df['TRANSACTION_DATE'].dt.month
 
-
+# map GLA_DESCRIPTION
 db_list = [DATABASE1, DATABASE2, DATABASE3]
 map_file_list = [mapping_file_db1, mapping_file_db2, mapping_file_db3]
 df_list = []
@@ -209,37 +213,19 @@ for i in range(0, 3):
 
 df = pd.concat(df_list, ignore_index=True)
 
+# map GLA_CODE from GLA_DESCRIPTION
+mapping_df_code = pd.read_csv(mapping_file_code)
+mapping_df_code = mapping_df_code.astype(object)
+# mapping_df_code = mapping_df_code.fillna("no value")
+df = pd.merge(
+    df,
+    mapping_df_code,
+    on=['GLA_DESCRIPTION'],
+    how='left'
+)
+df = df.drop(columns=['GLA_CODE Split A', 'GLA_CODE Split B', 'GLA_CODE Split C', 'Code Concat'])
 
-# create GLA_DESCRIPTION
-# mapping_df_db1 = pd.read_csv(mapping_file_db1)
-# mapping_df_db1['SOURCE_DATA'] = DATABASE1
-# mapping_df_db1 = mapping_df_db1.astype(object)
-# df = pd.merge(
-#     df,
-#     mapping_df_db1,
-#     on=['SOURCE_DATA', 'Clase', 'SubClase', 'Rubro', 'SubRubro', 'Cuenta', 'Nombre'],
-#     how='left'
-# )
-
-# mapping_df_db2 = pd.read_csv(mapping_file_db2)
-# mapping_df_db2['SOURCE_DATA'] = DATABASE2
-# mapping_df_db2 = mapping_df_db2.astype(object)
-# df = pd.merge(
-#     df,
-#     mapping_df_db2,
-#     on=['SOURCE_DATA', 'Clase', 'SubClase', 'Rubro', 'SubRubro', 'Cuenta', 'Nombre'],
-#     how='left'
-# )
-
-# mapping_df_db3 = pd.read_csv(mapping_file_db3)
-# mapping_df_db3['SOURCE_DATA'] = DATABASE3
-# mapping_df_db3 = mapping_df_db3.astype(object)
-# df = pd.merge(
-#     df,
-#     mapping_df_db3,
-#     on=['SOURCE_DATA', 'Clase', 'SubClase', 'Rubro', 'SubRubro', 'Cuenta', 'Nombre'],
-#     how='left'
-# )
+df['GENERAL_LEDGER_ACCOUNT'] = df['GLA_CODE'] + " - " + df['GLA_DESCRIPTION']
 
 print(df)
 
